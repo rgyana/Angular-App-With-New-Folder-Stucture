@@ -1,0 +1,42 @@
+<div class="flex align-items-center justify-content-between">
+    <div class="col-6 bg-blue-400 h-screen"></div>
+    <div class="col-6 flex flex-column align-items-center justify-content-center h-screen gap-4">
+        <div class="text-xl font-semibold">Welcome to NeoEdge</div>
+
+        <form [formGroup]="signupForm" (ngSubmit)="signupHere()" class="w-full flex flex-column px-4 gap-3">
+            <p-floatLabel>
+                <input pInputText id="mobileNumber" formControlName="mobileNumber" class="w-full" minlength="10"
+                    maxlength="10" pKeyFilter="int" />
+                <label for="mobileNumber">Mobile Number</label>
+            </p-floatLabel>
+            <app-error-message [control]="signupForm.controls['mobileNumber']"></app-error-message>
+
+            <p-floatLabel>
+                <input pInputText id="emailAddress" formControlName="emailAddress" class="w-full" />
+                <label for="emailAddress">Email</label>
+            </p-floatLabel>
+            <app-error-message [control]="signupForm.controls['emailAddress']"></app-error-message>
+
+            <p-floatLabel>
+                <input pInputText type="password" id="password" formControlName="password" class="w-full" />
+                <label for="password">Password</label>
+            </p-floatLabel>
+            <app-error-message [control]="signupForm.controls['password']"></app-error-message>
+
+            <div class="flex align-items-center gap-3">
+                <button pButton pRipple label="Signup" class="p-button-success w-full" [disabled]="signupForm.invalid">
+                </button>
+
+                @if(isLoading){
+                <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+                }
+            </div>
+        </form>
+
+        <div>Already have Account! <span class="text-blue-500 hover:text-blue-700 cursor-pointer"
+                routerLink="/login">Login here</span>
+        </div>
+    </div>
+</div>
+
+<p-toast></p-toast>

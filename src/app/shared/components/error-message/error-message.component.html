@@ -1,0 +1,5 @@
+@if(control && control.touched && control.invalid){
+<div *ngFor="let message of errorMessages" class="text-red-400 text-xs">
+    {{ message }}
+</div>
+}
