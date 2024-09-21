@@ -1,28 +1,28 @@
 import {
   AutoFocus
-} from "./chunk-FEYYLGHG.js";
+} from "./chunk-MDZ2MZAH.js";
 import {
   Ripple
-} from "./chunk-YPX46FG4.js";
+} from "./chunk-UGPKL5LW.js";
 import {
   BaseIcon
-} from "./chunk-DSXHWTVH.js";
+} from "./chunk-EWKTWWPD.js";
 import {
   DomHandler
-} from "./chunk-JZQAVOZS.js";
+} from "./chunk-A3GGLH5L.js";
 import {
   ObjectUtils,
   PrimeTemplate,
   SharedModule,
   UniqueComponentId
-} from "./chunk-3L3ZJZFB.js";
+} from "./chunk-5Q37QMZW.js";
 import {
   DOCUMENT,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-XHU5GZOC.js";
+} from "./chunk-RO6GFEFQ.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -71,8 +71,8 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-Z5H46ANP.js";
-import "./chunk-R7GQRDZ6.js";
+} from "./chunk-UTTVTMJ7.js";
+import "./chunk-WL62QM7G.js";
 
 // node_modules/primeng/fesm2022/primeng-icons-spinner.mjs
 var SpinnerIcon = class _SpinnerIcon extends BaseIcon {

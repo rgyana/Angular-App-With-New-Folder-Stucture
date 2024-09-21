@@ -11,8 +11,7 @@ import { SignupClass } from '../../models/signup';
   styleUrl: './signup.component.scss'
 })
 export class SignupComponent implements OnInit {
-  signupForm!: FormGroup;
-  signupFormGroup!: SignupClass;
+  signupForm!: SignupClass;
   isLoading: boolean = false;
 
   constructor(
@@ -23,37 +22,17 @@ export class SignupComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.initForm();
-    this.signupFormGroup = new SignupClass(this.formBuilder);
-  }
-
-  initForm() {
-    this.signupForm = this.formBuilder.group({
-      mobileNumber: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
-      emailAddress: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required]],
-      rememberme: ['']
-    })
+    this.signupForm = new SignupClass(this.formBuilder);
   }
 
   signupHere() {
     this.isLoading = true;
-    this.authService.signupHere(this.signupForm.value).then((response) => {
-      this.isLoading = false;
-      this.messageService.add({
-        severity: 'success',
-        summary: 'Success',
-        detail: 'Signnedup In Successfully',
-        life: 3000
-      })
-    }).catch((err) => {
-      this.isLoading = false;
-      this.messageService.add({
-        severity: 'error',
-        summary: 'Signup Error',
-        detail: 'Something went wrong',
-        life: 3000
-      })
+    this.router.navigate(['/otp']);
+    this.messageService.add({
+      severity: 'success',
+      summary: 'Success',
+      detail: 'Signed Up Successfully',
+      life: 3000
     })
   }
 }

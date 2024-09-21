@@ -10,9 +10,8 @@ import { LoginClass } from '../../models/login';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent implements OnInit {
-  loginForm!: FormGroup
   isLoading: boolean = false;
-  NewLoginFormGroup !: LoginClass;
+  loginForm !: LoginClass;
 
   constructor(
     private router: Router,
@@ -21,16 +20,16 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.NewLoginFormGroup = new LoginClass(this.formBuilder);
+    this.loginForm = new LoginClass(this.formBuilder);
   }
 
   username = 7683876626;
   password = 123456;
   loginHere() {
     if (
-      this.NewLoginFormGroup.loginForm.value.username == this.username
+      this.loginForm.loginController.value.username == this.username
       &&
-      this.NewLoginFormGroup.loginForm.value.password == this.password
+      this.loginForm.loginController.value.password == this.password
     ) {
       this.messageService.add({
         severity: 'success',

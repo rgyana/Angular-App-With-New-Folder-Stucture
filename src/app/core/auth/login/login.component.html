@@ -6,21 +6,21 @@
         <div>Don't have Account! <span class="text-blue-500 hover:text-blue-700 cursor-pointer"
                 routerLink="/signup">Signup here</span>
         </div>
- 
-        <form [formGroup]="NewLoginFormGroup.loginForm" (ngSubmit)="loginHere()"
+
+        <form [formGroup]="loginForm.loginController" (ngSubmit)="loginHere()"
             class="w-full flex flex-column px-4 gap-3">
             <p-floatLabel>
                 <input pInputText id="username" formControlName="username" class="w-full" minlength="10" maxlength="10"
                     pKeyFilter="int" />
                 <label for="username">Username</label>
             </p-floatLabel>
-            <app-error-message [control]="NewLoginFormGroup.loginForm.controls['username']"></app-error-message>
+            <app-error-message [control]="loginForm.loginController.controls['username']"></app-error-message>
 
             <p-floatLabel>
                 <input pInputText type="password" id="password" formControlName="password" class="w-full" />
                 <label for="password">Password</label>
             </p-floatLabel>
-            <app-error-message [control]="NewLoginFormGroup.loginForm.controls['password']"></app-error-message>
+            <app-error-message [control]="loginForm.loginController.controls['password']"></app-error-message>
 
             <div class="w-full flex align-items-center justify-content-between">
                 <div class="flex align-items-center gap-2">
@@ -31,7 +31,8 @@
             </div>
 
             <div class="flex align-items-center gap-3">
-                <button pButton pRipple label="Signup" class="p-button-success w-full" [disabled]="NewLoginFormGroup.loginForm.invalid">
+                <button pButton pRipple label="Signup" class="p-button-success w-full"
+                    [disabled]="loginForm.loginController.invalid">
                 </button>
 
                 @if(isLoading){

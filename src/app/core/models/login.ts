@@ -1,18 +1,12 @@
 import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
 
 export class LoginClass {
-    loginForm: FormGroup;
+    loginController: FormGroup;
 
-    constructor(private formBuilder: FormBuilder) {
-        // this.loginForm = new FormGroup({
-        //     username: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]),
-        //     password: new FormControl('', [Validators.required]),
-        //     rememberme: new FormControl(''),
-        // });
-
-        this.loginForm = formBuilder.group({
+    constructor(formBuilder: FormBuilder) {
+        this.loginController = formBuilder.group({
             username: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
-            password: ['', [Validators.required]],
+            password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(6)]],
             rememberme: ['']
         })
     }

@@ -3,28 +3,30 @@
     <div class="col-6 flex flex-column align-items-center justify-content-center h-screen gap-4">
         <div class="text-xl font-semibold">Welcome to NeoEdge</div>
 
-        <form [formGroup]="signupForm" (ngSubmit)="signupHere()" class="w-full flex flex-column px-4 gap-3">
+        <form [formGroup]="signupForm.signupControllers" (ngSubmit)="signupHere()"
+            class="w-full flex flex-column px-4 gap-3">
             <p-floatLabel>
-                <input pInputText id="mobileNumber" formControlName="mobileNumber" class="w-full" minlength="10"
+                <input pInputText id="username" formControlName="username" class="w-full" minlength="10"
                     maxlength="10" pKeyFilter="int" />
-                <label for="mobileNumber">Mobile Number</label>
+                <label for="username">Mobile Number</label>
             </p-floatLabel>
-            <app-error-message [control]="signupForm.controls['mobileNumber']"></app-error-message>
+            <app-error-message [control]="signupForm.signupControllers.controls['username']"></app-error-message>
 
             <p-floatLabel>
-                <input pInputText id="emailAddress" formControlName="emailAddress" class="w-full" />
-                <label for="emailAddress">Email</label>
+                <input pInputText id="email" formControlName="email" class="w-full" />
+                <label for="email">Email</label>
             </p-floatLabel>
-            <app-error-message [control]="signupForm.controls['emailAddress']"></app-error-message>
+            <app-error-message [control]="signupForm.signupControllers.controls['email']"></app-error-message>
 
             <p-floatLabel>
                 <input pInputText type="password" id="password" formControlName="password" class="w-full" />
                 <label for="password">Password</label>
             </p-floatLabel>
-            <app-error-message [control]="signupForm.controls['password']"></app-error-message>
+            <app-error-message [control]="signupForm.signupControllers.controls['password']"></app-error-message>
 
             <div class="flex align-items-center gap-3">
-                <button pButton pRipple label="Signup" class="p-button-success w-full" [disabled]="signupForm.invalid">
+                <button pButton pRipple label="Signup" class="p-button-success w-full"
+                    [disabled]="signupForm.signupControllers.invalid">
                 </button>
 
                 @if(isLoading){

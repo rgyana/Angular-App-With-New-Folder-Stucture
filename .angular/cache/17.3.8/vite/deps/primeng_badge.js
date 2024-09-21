@@ -1,17 +1,17 @@
 import {
   DomHandler
-} from "./chunk-JZQAVOZS.js";
+} from "./chunk-A3GGLH5L.js";
 import {
   SharedModule,
   UniqueComponentId
-} from "./chunk-3L3ZJZFB.js";
+} from "./chunk-5Q37QMZW.js";
 import {
   CommonModule,
   DOCUMENT,
   NgClass,
   NgIf,
   NgStyle
-} from "./chunk-XHU5GZOC.js";
+} from "./chunk-RO6GFEFQ.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -41,8 +41,8 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-Z5H46ANP.js";
-import "./chunk-R7GQRDZ6.js";
+} from "./chunk-UTTVTMJ7.js";
+import "./chunk-WL62QM7G.js";
 
 // node_modules/primeng/fesm2022/primeng-badge.mjs
 function Badge_span_0_Template(rf, ctx) {

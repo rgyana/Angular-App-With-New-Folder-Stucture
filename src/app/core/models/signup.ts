@@ -1,10 +1,10 @@
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 export class SignupClass {
-    signupForm: FormGroup;
+    signupControllers: FormGroup;
 
     constructor(private formBuilder: FormBuilder) {
-        this.signupForm = this.formBuilder.group({
+        this.signupControllers = this.formBuilder.group({
             username: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
             email: ['', [Validators.required, Validators.email]],
             password: ['', [Validators.required]],
