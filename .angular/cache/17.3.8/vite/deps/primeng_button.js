@@ -3,7 +3,7 @@ import {
 } from "./chunk-MDZ2MZAH.js";
 import {
   Ripple
-} from "./chunk-UGPKL5LW.js";
+} from "./chunk-APFEKJFC.js";
 import {
   BaseIcon
 } from "./chunk-EWKTWWPD.js";
@@ -11,18 +11,18 @@ import {
   DomHandler
 } from "./chunk-A3GGLH5L.js";
 import {
-  ObjectUtils,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId
-} from "./chunk-5Q37QMZW.js";
-import {
   DOCUMENT,
   NgClass,
   NgIf,
   NgStyle,
   NgTemplateOutlet
 } from "./chunk-RO6GFEFQ.js";
+import {
+  ObjectUtils,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId
+} from "./chunk-5Q37QMZW.js";
 import {
   ChangeDetectionStrategy,
   Component,

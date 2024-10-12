@@ -6,17 +6,11 @@ import {
   AutoFocusModule
 } from "./chunk-MDZ2MZAH.js";
 import "./chunk-EWKTWWPD.js";
-import "./chunk-A3GGLH5L.js";
-import {
-  ObjectUtils,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule
-} from "./chunk-5Q37QMZW.js";
 import {
   NG_VALUE_ACCESSOR,
   NgControl
 } from "./chunk-FM4ARARN.js";
+import "./chunk-A3GGLH5L.js";
 import {
   CommonModule,
   NgClass,
@@ -24,6 +18,12 @@ import {
   NgStyle,
   NgTemplateOutlet
 } from "./chunk-RO6GFEFQ.js";
+import {
+  ObjectUtils,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule
+} from "./chunk-5Q37QMZW.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

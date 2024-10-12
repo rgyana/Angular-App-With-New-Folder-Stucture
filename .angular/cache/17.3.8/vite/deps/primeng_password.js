@@ -2,20 +2,19 @@ import {
   TimesIcon
 } from "./chunk-HZCS5O3T.js";
 import {
-  InputText,
-  InputTextModule
-} from "./chunk-EIFAWSWJ.js";
-import {
   AutoFocus,
   AutoFocusModule
 } from "./chunk-MDZ2MZAH.js";
 import {
+  InputText,
+  InputTextModule
+} from "./chunk-F55ISFWO.js";
+import {
   BaseIcon
 } from "./chunk-EWKTWWPD.js";
 import {
-  ConnectedOverlayScrollHandler,
-  DomHandler
-} from "./chunk-A3GGLH5L.js";
+  NG_VALUE_ACCESSOR
+} from "./chunk-FM4ARARN.js";
 import {
   animate,
   style,
@@ -23,17 +22,9 @@ import {
   trigger
 } from "./chunk-BOPAE532.js";
 import {
-  OverlayService,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  TranslationKeys,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-5Q37QMZW.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-FM4ARARN.js";
+  ConnectedOverlayScrollHandler,
+  DomHandler
+} from "./chunk-A3GGLH5L.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -43,6 +34,15 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-RO6GFEFQ.js";
+import {
+  OverlayService,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  TranslationKeys,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-5Q37QMZW.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

@@ -2,16 +2,16 @@ import {
   DomHandler
 } from "./chunk-A3GGLH5L.js";
 import {
-  SharedModule,
-  UniqueComponentId
-} from "./chunk-5Q37QMZW.js";
-import {
   CommonModule,
   DOCUMENT,
   NgClass,
   NgIf,
   NgStyle
 } from "./chunk-RO6GFEFQ.js";
+import {
+  SharedModule,
+  UniqueComponentId
+} from "./chunk-5Q37QMZW.js";
 import {
   ChangeDetectionStrategy,
   Component,

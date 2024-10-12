@@ -17,7 +17,7 @@ const routes: Routes = [
 
   { path: 'signup', component: SignupComponent },
 
-  { path: 'otp', component: VerifyOtpComponent },
+  { path: 'otp/:username', component: VerifyOtpComponent },
 
   { path: 'forgot-password', component: ForgetPasswordComponent },
 ];

@@ -27,7 +27,7 @@ export class SignupComponent implements OnInit {
 
   signupHere() {
     this.isLoading = true;
-    this.router.navigate(['/otp']);
+    this.router.navigate(['/otp/' + this.signupForm.signupControllers.value.username]);
     this.messageService.add({
       severity: 'success',
       summary: 'Success',
